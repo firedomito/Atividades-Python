@@ -1,0 +1,30 @@
+PRODUTO=A borboleta amarela PRECO=45.00
+PRODUTO=A elite do atraso PRECO=49.70
+PRODUTO=A garota do lago PRECO=36.50
+PRODUTO=A revolução dos bichos PRECO=27.50
+PRODUTO=A teoria que nao morreia PRECO=77.70
+PRODUTO=Amora PRECO=54.90
+PRODUTO=Caliba e a bruxa: mulheres, corpos e acumulacao primitiva PRECO=59.90
+PRODUTO=Critica da razao negra PRECO=59.20
+PRODUTO=Eleanor e Park PRECO=33.80
+PRODUTO=Essa Gente PRECO=49.00
+PRODUTO=Feminismo em comum PRECO=39.90
+PRODUTO=Filosofia da India PRECO=87
+PRODUTO=Genero patriacado violencia PRECO=58.90
+PRODUTO=Heroinas negras brasileiras em 15 cordeis PRECO=32.50
+PRODUTO=Ideias para adiar o fim do mundo PRECO=18.00
+PRODUTO=O amor nos tempos do colera PRECO=100.00
+PRODUTO=O conto da Aia PRECO=27.50
+PRODUTO=O feminismo e para todo mundo PRECO=44.90
+PRODUTO=O guia do mochileiro das galáxias PRECO=48.90
+PRODUTO=O mito da beleza PRECO=69.90
+PRODUTO=Onde dorme o amor PRECO=45.00
+PRODUTO=Os testamentos PRECO=54.90
+PRODUTO=Poeira Lunar PRECO=63.80
+PRODUTO=Por um feminismo afro-latino americano PRECO=41.50
+PRODUTO=Quem tem medo do feminismo negro? PRECO=29.90
+PRODUTO=Reinvencao da intimidade PRECO=69.90
+PRODUTO=Ritos de passagem PRECO=42.80
+PRODUTO=Sejamos todos feministas PRECO=24.90
+PRODUTO=Textos crueis demais para serem lidos rapidamente PRECO=39.80
+PRODUTO=Torto arado PRECO=45.30
