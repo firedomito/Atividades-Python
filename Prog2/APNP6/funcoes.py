@@ -13,7 +13,6 @@ def ord_select(lista):
         lista[i], lista[minimo] = lista[minimo], lista[i]
 
 
-
 def ord_insert(lista):
     lstNum = len(lista)
     # Percorre o arranjo A.
@@ -26,4 +25,30 @@ def ord_insert(lista):
             i = i - 1
         lista[i + 1] = chave
 
+
+
+# def pesquisa_binaria(lista, item):
+#     """Implementa pesquisa binária iterativamente."""
+#     esquerda, direita = 0, len(A) - 1
+#     while esquerda <= direita:
+#         meio = (esquerda + direita) // 2
+#         if A[meio] == item:
+#             return meio
+#         elif A[meio] > item:
+#             direita = meio - 1
+#         else: # A[meio] < item
+#             esquerda = meio + 1
+#     return -1
+
+# def buscaSequencial(lista, elemento):
+#     pos = int(0)
+#     i = int(0)
+
+#     pos = -1
+#     i = 0
+#     while i < len(lista) and pos == -1:
+#         if lista[i] == elemento:
+#             pos = i
+#         i += 1
+#     return pos
 
