@@ -25,30 +25,28 @@ def ord_insert(lista):
             i = i - 1
         lista[i + 1] = chave
 
+def buscaBinaria(lista, item):
+    esquerda = 0
+    pos = -1
+    fim = len(lista) - 1
+    while esquerda <= fim and pos == -1:
+        meio = (esquerda + fim) // 2
+        if item == lista[meio]:
+            pos = meio
+        elif item < lista[meio]:
+            fim = meio - 1
+        else:
+            esquerda = meio + 1
+    return pos
 
 
-# def pesquisa_binaria(lista, item):
-#     """Implementa pesquisa binária iterativamente."""
-#     esquerda, direita = 0, len(A) - 1
-#     while esquerda <= direita:
-#         meio = (esquerda + direita) // 2
-#         if A[meio] == item:
-#             return meio
-#         elif A[meio] > item:
-#             direita = meio - 1
-#         else: # A[meio] < item
-#             esquerda = meio + 1
-#     return -1
+def buscaSequencial(lista, elemento):
+    pos = -1
+    i = 0
 
-# def buscaSequencial(lista, elemento):
-#     pos = int(0)
-#     i = int(0)
-
-#     pos = -1
-#     i = 0
-#     while i < len(lista) and pos == -1:
-#         if lista[i] == elemento:
-#             pos = i
-#         i += 1
-#     return pos
+    while i < len(lista) and pos == -1:
+        if lista[i] == elemento:
+            pos = i
+        i += 1
+    return pos
 
