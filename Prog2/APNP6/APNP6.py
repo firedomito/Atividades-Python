@@ -48,7 +48,10 @@ def main():
     lst10000_3 = lst10000.copy()
 
 
-    #lst100000 = random.sample(range(-10000, 10000 ), 100000)
+    lst100000 = random.sample(range(-100000, 100000 ), 100000)
+    lst100000_1 = lst10000.copy()
+    lst100000_2 = lst100000.copy()
+    lst100000_3 = lst100000.copy()
 
 
     agora = time.process_time()
@@ -116,6 +119,20 @@ def main():
     tempo_decorrido = time.process_time() - agora
     tmp_sort.append(tempo_decorrido)
 
+    agora = time.process_time()
+    ord_select(lst100000_1)
+    tempo_decorrido = time.process_time() - agora
+    tmp_select.append(tempo_decorrido)
+
+    agora = time.process_time()
+    ord_insert(lst100000_2)
+    tempo_decorrido = time.process_time() - agora
+    tmp_insert.append(tempo_decorrido)
+
+    agora = time.process_time()
+    lst100000_3.sort()
+    tempo_decorrido = time.process_time() - agora
+    tmp_sort.append(tempo_decorrido)
 
     dicionario[lstMetodos[0]] = tmp_select
     dicionario[lstMetodos[1]] = tmp_insert
@@ -128,19 +145,19 @@ def main():
 
     
     #Gera o grafico com os valores de 100000
-    timer.append(dicionario[lstMetodos[0]][3])
-    timer.append(dicionario[lstMetodos[1]][3])
-    timer.append(dicionario[lstMetodos[2]][3])
+    timer.append(dicionario[lstMetodos[0]][4])
+    timer.append(dicionario[lstMetodos[1]][4])
+    timer.append(dicionario[lstMetodos[2]][4])
     plt.bar(lstMetodos, timer)
     plt.show()
 
     vazio = ' '
     lstNum = [10, 100, 1000, 10000, 100000]
     print('_' * 78)
-    print(f'|{vazio:>13}| {lstNum[0]:> 12} {lstNum[1]:> 13} {lstNum[2]:> 13} {lstNum[3]:> 13}')
+    print(f'|{vazio:>13}| {lstNum[0]:> 12} {lstNum[1]:> 13} {lstNum[2]:> 13} {lstNum[3]:> 13} {lstNum[4]:> 13}')
 
     for key in dicionario:
-        print(f'|{key:<13}| {dicionario[key][0]:>13,.5f} {dicionario[key][1]:>13,.5f} {dicionario[key][2]:>13,.5f} {dicionario[key][3]:>13,.5f}')
+        print(f'|{key:<13}| {dicionario[key][0]:>13,.5f} {dicionario[key][1]:>13,.5f} {dicionario[key][2]:>13,.5f} {dicionario[key][3]:>13,.5f} {dicionario[key][4]:>13,.5f}')
     print('_' * 78)
 
 
@@ -149,8 +166,6 @@ def main():
     lstNaoOrd = random.sample(range(-100000, 100000 ), 100000)
     lstOrd = lstNaoOrd.copy()
     lstOrd.sort()
-
-
 
     
     inicioOrd = lstNaoOrd[0]
