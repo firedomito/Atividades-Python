@@ -229,6 +229,7 @@ def main():
 
 
 
+    #Inicio do grafico dos tempos binarios e sequencial
     y1 = tmp_binario
     y2 = tmp_sequencial
 
@@ -239,43 +240,19 @@ def main():
 
     plt.figure(figsize=(10,5))
 
-    plt.bar(x1, y1, color='#4287f5', width=bwidth, label='Sequencial')
-    plt.bar(x2, y2, width = bwidth, color = '#')
+    plt.bar(x1, y1, color='#4287f5', width=bwidth, label='Binario')
+    plt.bar(x2, y2, color = '#19faa0', width = bwidth, label = 'Sequencial')
 
     # gera o grafico de barras 
     plt.ylabel("Tempo Decorrido") # Nome dos elementos do Y
     plt.xlabel("Elementos") #Nome dos elementos do X
-    plt.xticks([r + bwidth for r in range(len(x))], ['primeiro', 'ultimo', 'central', 'nao existente'])
+    plt.xticks([r + bwidth for r in range(len(y1))], ['primeiro', 'ultimo', 'central', 'nao existente'])
     plt.title("Tempo por Elemento") #titulo da tabela
 
+    plt.legend()
     plt.show()
 
 
-# PARTE GRAFICA BINARIA E SEQUENCIAL
-    tmp_binario = tmp_binario
-    tmp_sequencial = tmp_sequencial
-
-    barWidth = 0.25
-
-    plt.figure(figsize=(10,5))
-
-    r1 = np.arange(len(tmp_binario))
-    r2 = [x + barWidth for x in r1]
-
-    plt.bar(r1, tmp_sequencial, color='#6A5ACD', width=barWidth, label='Busca Sequencial')
-    plt.bar(r2, tmp_binario, color='#00BFFF', width=barWidth, label='Busca Binaria')
-
-
-
-    # gera o grafico de barras 
-    plt.ylabel("Tempo decorrido") # Nome dos elementos do Y
-    plt.xlabel("Elemento a ser buscado") #Nome dos elementos do X
-    plt.xticks([r + barWidth for r in range(len(tmp_binario))], ['primeiro', 'ultimo', 'central', 'nao existente'])
-    plt.title("Tempo por Elemento") #titulo da tabela
-    
-    plt.legend()
-    plt.show() # mostra a tabela
-    ###fim do processamento do grafico
     
 
 
