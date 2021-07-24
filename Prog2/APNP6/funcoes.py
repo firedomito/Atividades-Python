@@ -1,10 +1,11 @@
 import random
 
+# Função de ordenação por Select. Recebe uma Lista Numerica #
 def ord_select(lista):
     lstNum = len(lista)
-    # Percorre o arranjo A.
+    # Percorre a lstNum
     for i in range(lstNum):
-        # Encontra o elemento mínimo em A.
+        # Encontra o elemento mínimo
         minimo = i
         for j in range(i + 1, lstNum):
             if lista[minimo] > lista[j]:
@@ -13,9 +14,10 @@ def ord_select(lista):
         lista[i], lista[minimo] = lista[minimo], lista[i]
 
 
+# Função de ordenação por Insert. Recebe uma Lista Numerica #
 def ord_insert(lista):
     lstNum = len(lista)
-    # Percorre o arranjo A.
+    # Percorre a lstNum .
     for j in range(1, lstNum):
         chave = lista[j]
         i = j - 1
@@ -25,6 +27,8 @@ def ord_insert(lista):
             i = i - 1
         lista[i + 1] = chave
 
+
+# Função de Busca Binaria. Recebe uma lista e um item que será procurado na lista. Retorna a posição do item #
 def buscaBinaria(lista, item):
     esquerda = 0
     pos = -1
@@ -40,12 +44,12 @@ def buscaBinaria(lista, item):
     return pos
 
 
-def buscaSequencial(lista, elemento):
+# Função de Busca Sequencial. Recebe uma lista e um item que será procurado na lista. Retorna a posição do item #
+def buscaSequencial(lista, item):
     pos = -1
     i = 0
-
     while i < len(lista) and pos == -1:
-        if lista[i] == elemento:
+        if lista[i] == item:
             pos = i
         i += 1
     return pos
