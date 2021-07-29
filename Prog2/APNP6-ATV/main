@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# 
+# ARQUIVO.py
+#
+# Copyright 2021
+# Autor: Guilherme Silveira Mendes
+#
+############################
+# Código fonte em Python 3
+############################
+
+
+
+def main():
+
+    curso = int(input())
+
+def modulo(curso):
+
+    inscritos = 0
+    dadosConc = {}
+
+    while(curso) > 0:
+        vagas = int(input())
+        qtdFem = int(input())
+        qtdMasc = int(input())
+
+        totalCand = (qtdFem + qtdMasc)
+
+        candVaga = (totalCand / vagas)
+
+        porcentoFem = (qtdFem/totalCand)*100    
+
+        dadosConc[curso] = [vagas, qtdMasc, qtdFem, candVaga, porcentoFem]
+
+
+        inscritos += totalCand
+
+        print(dadosConc)
+
+        curso = int(input())
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0
+
+
+
+if __name__ == "__main__":
+    main()
