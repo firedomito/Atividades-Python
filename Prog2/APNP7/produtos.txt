@@ -1,0 +1,30 @@
+macarao;45.30;10;0
+jilo;48.90;20;5
+feijao;69.90;20;20
+arroz;36.50;10;3
+goiaba;27.50;50;5
+biscoito;27.50;43;7
+mariola;24.90;50;45
+pasta de dente;33.80;10;9
+shampoo;39.90;10;7
+laranja;49.00;10;0
+beterraba;45.00;20;19
+sabonte;59.90;20;20
+suco de uva;42.80;20;5
+aveia;58.90;20;3
+sucrilhos;39.80;20;0
+azeite;32.50;20;5
+vinagre;18.00;20;5
+cafe;45.00;20;5
+chocolate;54.90;20;5
+amendoin;54.90;20;5
+morango;59.20;20;5
+melancia;41.50;20;5
+alcool;49.70;20;5
+acucar mascavo;29.90;20;5
+leite de cabra;69.90;20;5
+coalhada;100.00;20;5
+alho;44.90;20;5;20;5
+cebola;63.80;20;5
+ovos;77.70;20;5
+banana;87.30;20;5
